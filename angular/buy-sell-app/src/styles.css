@@ -6,7 +6,7 @@ body {
 }
 
 button {
-    background-color: black;
+    background-color:rgb(214, 40, 40);
     border: none;
     border-radius: 8px;
     color: white;
@@ -51,11 +51,12 @@ div {
 }
 
 #top-bar {
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid red;
 }
 
 #app-heading {
     margin-top: 0;
+    color:rgb(214, 40, 40)
 }
 
 #my-listings-button {
