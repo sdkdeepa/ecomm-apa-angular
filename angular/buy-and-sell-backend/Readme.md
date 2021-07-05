@@ -21,3 +21,6 @@ https://dev.mysql.com/downloads/workbench/
     - add user previleges
 8) Use postman to verify if `getListing` and `getAllListings` retrives data (see screenshot)
 ![Image]()
+9) Add `addViewToListing` and `getUserListings` endpoints (see postman screenshots)
+10) Create listings by the user 
+    install `npm i uuid`
