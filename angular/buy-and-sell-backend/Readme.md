@@ -12,6 +12,7 @@ https://dev.mysql.com/downloads/workbench/
 4) Create Listings Database (see screenshots below)
 
 5) Insert data into Listings Table (see screenshot below)
+![Image]()
 
 6) Install npm mysql from backend folder
     `npm i mysql`
@@ -19,3 +20,4 @@ https://dev.mysql.com/downloads/workbench/
     - add the user
     - add user previleges
 8) Use postman to verify if `getListing` and `getAllListings` retrives data (see screenshot)
+![Image]()
