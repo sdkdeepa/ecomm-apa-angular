@@ -3,6 +3,8 @@ import { getListingsRoute } from "./getListing";
 import { addViewToListingRoute } from "./addViewToListing";
 import { getUserListingsRoute } from "./getUserListings";
 import { createNewListingRoute } from "./createNewListings";
+import {updateListingRoute} from "./updateListing"
+import { deleteListingRoute } from "./deleteListing";
 
 export default [
     getAllListingsRoute,
@@ -10,4 +12,6 @@ export default [
     addViewToListingRoute,
     getUserListingsRoute,
     createNewListingRoute ,
+    updateListingRoute,
+    deleteListingRoute,
 ]
