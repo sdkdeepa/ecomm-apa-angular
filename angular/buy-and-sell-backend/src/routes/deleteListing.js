@@ -10,6 +10,6 @@ export const deleteListingRoute = {
             'DELETE FROM listings WHERE id=?',
             [id],
         )
-        return {message: 'Sucess'}
+        return {message: 'Sucess !'}
     }
 }
