@@ -16,7 +16,7 @@ export const addViewToListingRoute = {
             [id],
         )
         // send updated listing to client with the views updates
-        const updatedListing = result [0]
+        const updatedListing = results[0]
         return updatedListing
     }
 }
