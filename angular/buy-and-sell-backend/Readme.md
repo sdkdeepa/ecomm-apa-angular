@@ -1,7 +1,8 @@
 # Commands used 
 
 1) Added to script to start nodemon:
-`npx nodemon --exec npx babel-node src/server.js` 
+`npx nodemon --exec npx babel-node src/server.js`  or 
+`npm run dev`
 
 2) Install MySQL from 
 https://dev.mysql.com/downloads/mysql/

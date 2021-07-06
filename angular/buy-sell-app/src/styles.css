@@ -3,6 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: indianred;
 }
 
 button {
@@ -43,9 +44,9 @@ div {
 
 #max-width-column {
     background-color: white;
-    margin: 0 auto;
-    max-width: 700px;
-    min-height: 100vh;
+    margin: 100px auto;
+    max-width:auto;
+    min-height: auto;
     padding: 16px;
     position: relative;
 }
@@ -67,6 +68,7 @@ div {
 
 #content-wrap {
     padding: 16px;
+    background-color: lightblue;
 }
 
 .content-box {
