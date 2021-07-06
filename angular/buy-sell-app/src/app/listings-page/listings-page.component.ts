@@ -1,6 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { Listing } from '../types';
-import { fakeListings } from '../fake-data';
+import { ListingsService } from '../listings.service';
+
+//RxJS & HTTPClient - to make Network requests in Angular
+//RxJS is a library that makes it working with async and event based code  lot easier
+//HTTP Client - an angular module to make the request to the server
+
 
 @Component({
   selector: 'app-listings-page',
@@ -9,10 +14,14 @@ import { fakeListings } from '../fake-data';
 })
 export class ListingsPageComponent implements OnInit {
   listings: Listing[] = [];
-
-  constructor() { }
+s
+  constructor(
+    private listingsService: ListingsService
+  ) { }
 
   ngOnInit(): void {
-    this.listings = fakeListings;
+    //fetching our listing here will increase the code and will be hard to maintain. So create listing service.
+    this.listingsService.getListings()
+      .subscribe(listings => this.listings =listings)
   }
 }
