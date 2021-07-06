@@ -1,7 +1,10 @@
-import Hapi from '@hapi/hapi';
+import dotenv from 'dotenv'
+dotenv.config()
+import Hapi from '@hapi/hapi'
+import inert from '@hapi/inert'
 import * as admin from 'firebase-admin'
-import routes from './routes';
-import { db } from './database';
+import routes from './routes'
+import { db } from './database'
 import credentials from '../credentials.json'
 
 admin.initializeApp({
@@ -13,9 +16,10 @@ let server;
 
 const start = async () => {
     server = Hapi.server({
-        port: 5000,
-        host: 'localhost',
+        port: 8080,
+        host: '0.0.0.0',
     });
+    await server.register(inert)
 
     routes.forEach(route => server.route(route));
 
