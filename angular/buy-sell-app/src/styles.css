@@ -3,11 +3,11 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: indianred;
+    background-color: rgb(210 194 194);
 }
 
 button {
-    background-color:rgb(214, 40, 40);
+    background-color:rgb(41, 120, 211);
     border: none;
     border-radius: 8px;
     color: white;
@@ -16,6 +16,8 @@ button {
     padding: 16px;
     font-family: Arial, sans-serif;
     font-size: 16px;
+    display:grid;
+    margin: auto;
 }
 
 input, textarea {
@@ -37,9 +39,9 @@ div {
 
 #page-wrap {
     background-color: #EEE;
-    min-height: 100vh;
+    min-height:auto;
     padding: 0;
-    width: 100vw;
+    width:auto;
 }
 
 #max-width-column {
@@ -51,9 +53,9 @@ div {
     position: relative;
 }
 
-#top-bar {
+/* #top-bar {
     border-bottom: 2px solid red;
-}
+} */
 
 #app-heading {
     margin-top: 0;
@@ -71,6 +73,10 @@ div {
     background-color: lightblue;
 }
 
+#max-width-column h1, button{
+    text-align: center !important;
+}
+
 .content-box {
     background-color: #EEE;
     border-radius: 8px;
@@ -84,6 +90,8 @@ div {
     right: 0px;
     bottom: 0px;
     padding: 16px;
+    display: flex;
+    margin: auto;
 }
 
 .buttons-container > button {
