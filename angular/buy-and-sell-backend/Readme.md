@@ -17,7 +17,7 @@ https://dev.mysql.com/downloads/workbench/
 
 6) Install npm mysql from backend folder
     `npm i mysql`
-7) Creating a new server in MySql (create Users - see screenshot for creating `hapi-user`)
+7) Creating a new server in MySql (create Users - see screenshot for creating `hapi-server`)
     - add the user
     - add user previleges
 8) Use postman to verify if `getListing` and `getAllListings` retrives data (see screenshot)
